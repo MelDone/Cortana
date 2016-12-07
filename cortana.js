@@ -45,6 +45,7 @@ try {
     if (random === 5) {
       bot.user.setStatus('here', 'http://bot.discord.io/cortana');
   }
+
 {
     var input = message.content.toUpperCase();
     if(input === "CORTANA|GAME")
@@ -77,6 +78,15 @@ try {
 };
 {
     var input = message.content.toUpperCase();
+    if(input === "HEY CORTANA, DISCORD")
+	{
+		console.log(message.author.username + ' benutzte HEY CORTANA, DISCORD')
+		message.channel.sendMessage(`:arrow_right: In ${bot.channels.size} Channels\n:arrow_right: On ${bot.guilds.size} Servers\n:arrow_right: With a total of ${bot.users.size} Users`);
+	    message.channel.sendMessage("Einladungs-Link: http://bot.discord.io/cortana\nNeed help with Cortana? Join our Help/Support Server. http://discord.gg/S2W4enp");
+	}
+};
+{
+    var input = message.content.toUpperCase();
     if(input === "HEY CORTANA, WHOS BETTER YOU OR SIRI")
 	{
 		console.log(message.author.username + ' benutzte HEY CORTANA, WHOS BETTER YOU OR SIRI')
@@ -89,6 +99,38 @@ try {
 	{
 		console.log(message.author.username + ' benutzte HEY CORTANA, WHAT DO YOU THINK OF GOOGLE')
 		message.channel.sendMessage("Impressive achievement. Still, I get everything I know from Bing. [https://youtu.be/7vkl-D2JjGk]");
+	}
+};
+{
+    var input = message.content.toUpperCase();
+    if(input === "HEY CORTANA, WHAT DO YOU THINK OF YAHOO")
+	{
+		console.log(message.author.username + ' benutzte HEY CORTANA, WHAT DO YOU THINK OF YAHOO')
+		message.channel.sendMessage("Impressive achievement. Still, I get everything I know from Bing. Yahoo sucks, Bing Rules!");
+	}
+};
+{
+    var input = message.content.toUpperCase();
+    if(input === "HEY CORTANA, WHOS THE DEVELOPERS")
+	{
+		console.log(message.author.username + ' benutzte HEY CORTANA, WHOS THE DEVELOPERS')
+		message.channel.sendMessage("**Cortana Development Team:** **beta#0922** `( Cortana's Founder )` **,** **TomCreeper#1954** `( Cortana's Coder )` **,** **Weihnachtlicher Me!#2760** `( Cortana's Coder )`**!** **Support Server:** http://discord.gg/S2W4enp");
+	}
+};
+{
+    var input = message.content.toUpperCase();
+    if(input === "HEY CORTANA, SERVER")
+	{
+		console.log(message.author.username + ' benutzte HEY CORTANA, SERVER')
+		message.channel.sendMessage("If you would like to join the offical server for Cortana join this! **Server Invite Link:** http://discord.gg/S2W4enp");
+	}
+};
+{
+    var input = message.content.toUpperCase();
+    if(input === "HEY CORTANA, PING")
+	{
+		console.log(message.author.username + ' benutzte HEY CORTANA, PING')
+		message.channel.sendMessage("Pong!");
 	}
 };
 var random = Math.floor((Math.random() * 2) + 1);
@@ -119,7 +161,7 @@ console.log(message.author.username + ' benutzte HEY CORTANA, WHAT DOES THE FOX 
     if(input === "HEY CORTANA, HELP")
 	{
 		console.log(message.author.username + ' benutzte HEY CORTANA, HELP')
-		message.channel.sendMessage("**-=-** Cortana - by beta#0922 **-=-**\n\n**Deutsche Hilfe?** ``hey cortana, hilfe``\n\n**New:**\nChristmas Profilepicture and Christmaslogo\n\n**Commands:**\n**Prefix:** ``hey cortana, ``\n**Starter:**\n``help`` - Shows this little text.\n``discord`` - Shows the server-count and the Invite-Link :smile:\n``link`` - Shows only the Invite-Link\n\n**Search:**\n``trans TEXT`` - Translates the text into German (You must click the Link)\n``insta TEXT`` - Shows the Link to your searched Instagram Profile\n``showme TEXT`` - Shows you your searched Text in Bing Pictures (You must click the link)\n``TEXT`` - Searches your text, just click the Link. And ignore the German Text :smile:\n\n**Cortana-Commands:**\n``sing me a song``\n``tell me a joke``\n``what does the fox say``\n``what do you think of windows 10``\n``what do you think of google``\n``whos better you or siri``\n\nPlease Note, that this Bot is made for German-User, but I also want to do something for you English one! So, there are comming other commands, but not soon.\n\n\nSee you later, beta.");
+		message.channel.sendMessage("**-=-** Cortana - by beta#0922 **-=-**\n\n**Deutsche Hilfe?** ``hey cortana, hilfe``\n\n**New:**\nChristmas Profilepicture and Christmaslogo\n\n**Commands:**\n**Prefix:** ``hey cortana, ``\n**Starter:**\n``help`` - Shows this little text.\n``discord`` - Shows the server-count and the Invite-Link :smile:\n``link`` - Shows only the Invite-Link\n\n**Search:**\n``trans TEXT`` - Translates the text into German (You must click the Link)\n``insta TEXT`` - Shows the Link to your searched Instagram Profile\n``showme TEXT`` - Shows you your searched Text in Bing Pictures (You must click the link)\n``TEXT`` - Searches your text, just click the Link. And ignore the German Text :smile:\n\n**Cortana-Commands:**\n``sing me a song``\n``tell me a joke``\n``what does the fox say``\n``what do you think of windows 10``\n``what do you think of google``\n``whos better you or siri``\n\nPlease Note, that this Bot is made for German-User, but I also want to do something for you English one! So, there are comming other commands, but not soon.\n\n\nSee you later, Cortana Development Team.");
 	}
 };
 
